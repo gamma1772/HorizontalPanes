@@ -1,0 +1,23 @@
+{
+  "replace": false,
+  "values": [
+    "horizontalpanes:horizontal_glass_pane",
+
+    "horizontalpanes:horizontal_stained_white_pane",
+    "horizontalpanes:horizontal_stained_red_pane",
+    "horizontalpanes:horizontal_stained_orange_pane",
+    "horizontalpanes:horizontal_stained_pink_pane",
+    "horizontalpanes:horizontal_stained_yellow_pane",
+    "horizontalpanes:horizontal_stained_lime_pane",
+    "horizontalpanes:horizontal_stained_green_pane",
+    "horizontalpanes:horizontal_stained_light_blue_pane",
+    "horizontalpanes:horizontal_stained_cyan_pane",
+    "horizontalpanes:horizontal_stained_blue_pane",
+    "horizontalpanes:horizontal_stained_magenta_pane",
+    "horizontalpanes:horizontal_stained_purple_pane",
+    "horizontalpanes:horizontal_stained_brown_pane",
+    "horizontalpanes:horizontal_stained_gray_pane",
+    "horizontalpanes:horizontal_stained_light_gray_pane",
+    "horizontalpanes:horizontal_stained_black_pane"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "horizontal_stained_glass_pane",
+  "pattern": [
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:light_gray_stained_glass_pane"
+    }
+  },
+  "result": {
+    "item": "horizontalpanes:horizontal_stained_light_gray_pane",
+    "count": 3
+  }
+}
