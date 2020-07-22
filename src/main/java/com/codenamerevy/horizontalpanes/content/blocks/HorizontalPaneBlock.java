@@ -15,7 +15,6 @@ import net.minecraft.util.math.shapes.ISelectionContext;
 import net.minecraft.util.math.shapes.VoxelShape;
 import net.minecraft.world.IBlockReader;
 import net.minecraft.world.IWorld;
-import net.minecraftforge.common.ToolType;
 
 @SuppressWarnings("deprecation")
 public class HorizontalPaneBlock extends GlassBlock implements IWaterLoggable
@@ -39,7 +38,7 @@ public class HorizontalPaneBlock extends GlassBlock implements IWaterLoggable
 
     //Returns which side of the block will be invisible and when.
     public boolean isSideInvisible(BlockState state, BlockState adjacentBlockState, Direction side) {
-        return adjacentBlockState.isIn(this) ? true : super.isSideInvisible(state, adjacentBlockState, side);
+        return adjacentBlockState.getBlock() == this ? true : super.isSideInvisible(state, adjacentBlockState, side);
     }
 
     //Returns the value of light that can pass through the block???
@@ -57,7 +56,7 @@ public class HorizontalPaneBlock extends GlassBlock implements IWaterLoggable
     @Override
     public FluidState getFluidState(BlockState state)
     {
-        return state.get(WATERLOGGED) ? Fluids.WATER.getStillFluidState(false) : super.getFluidState(state);
+        return (FluidState) (state.get(WATERLOGGED) ? Fluids.WATER.getStillFluidState(false) : super.getFluidState(state));
     }
 
     //This is used to update the block state. In this situation updates the block if it's placed in water, or water is placed 'in' the block.
@@ -81,7 +80,7 @@ public class HorizontalPaneBlock extends GlassBlock implements IWaterLoggable
     @Override
     public BlockState getStateForPlacement(BlockItemUseContext context)
     {
-        FluidState fluidState = context.getWorld().getFluidState(context.getPos());
+        FluidState fluidState = (FluidState) context.getWorld().getFluidState(context.getPos());
         return this.getDefaultState().with(WATERLOGGED, Boolean.valueOf(fluidState.isTagged(FluidTags.WATER) && fluidState.getLevel() == 8));
     }
 

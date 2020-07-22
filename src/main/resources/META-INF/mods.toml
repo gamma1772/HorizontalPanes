@@ -1,5 +1,5 @@
 modLoader="javafml" #mandatory
-loaderVersion="[32,)" #mandatory
+loaderVersion="[31,)" #mandatory
 issueTrackerURL="https://github.com/CodenameRevy/Horizontal-Panes/issues" #optional
 [[mods]] #mandatory
 modId="horizontalpanes" #mandatory
@@ -11,18 +11,19 @@ displayURL="https://github.com/CodenameRevy/Horizontal-Panes" #optional
 credits="CodenameRevy" #optional
 authors="CodenameRevy" #optional
 description='''
+1.15.2 port.
 Adds Horizontal Glass Panes to the game.
 '''
 
 [[dependencies.horizontalpanes]] #optional
     modId="forge" #mandatory
     mandatory=true #mandatory
-    versionRange="[32,)" #mandatory
+    versionRange="[31,)" #mandatory
     ordering="NONE"
     side="BOTH"
 [[dependencies.horizontalpanes]]
     modId="minecraft"
     mandatory=true
-    versionRange="[1.16.1]"
+    versionRange="[1.15.2]"
     ordering="NONE"
     side="BOTH"
