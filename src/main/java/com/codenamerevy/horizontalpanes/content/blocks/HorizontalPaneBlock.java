@@ -31,6 +31,7 @@ public class HorizontalPaneBlock extends GlassBlock implements IWaterLoggable
 
     private static final BooleanProperty WATERLOGGED = BlockStateProperties.WATERLOGGED;
     private final VoxelShape SHAPE = Block.makeCuboidShape(nodeX, nodeY, nodeZ, extX, extY, extZ);
+    private final VoxelShape SHAPE_TOP = Block.makeCuboidShape(nodeX, nodeY + 8D, nodeZ, extX, extY + 8D, extZ);
 
     public HorizontalPaneBlock(Properties properties) {
         super(properties.notSolid().hardnessAndResistance(0.3F, 0.3F).sound(SoundType.GLASS)); //notSolid for rendering and hardnessAndResistance to match the glass block.
