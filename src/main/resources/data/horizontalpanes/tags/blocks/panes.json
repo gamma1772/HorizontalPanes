@@ -1,0 +1,7 @@
+{
+  "replace": false,
+  "values": [
+    "#horizontalpanes:glass_panes",
+    "#horizontalpanes:horizontal_glass_panes"
+  ]
+}
