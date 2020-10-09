@@ -2,8 +2,6 @@ package com.codenamerevy.horizontalpanes;
 
 import com.codenamerevy.horizontalpanes.content.blocks.ModBlocks;
 import com.codenamerevy.horizontalpanes.content.items.ModItems;
-import net.minecraft.client.renderer.RenderType;
-import net.minecraft.client.renderer.RenderTypeLookup;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.ModLoadingContext;
@@ -32,33 +30,13 @@ public class HorizontalPanes
         MinecraftForge.EVENT_BUS.register(this);
     }
 
-    private void commonSetup(final FMLCommonSetupEvent common)
+    private void commonSetup(final FMLCommonSetupEvent commonSetupEvent)
     {
 
     }
-    private void clientSetup(final FMLClientSetupEvent client)
+
+    private void clientSetup(final FMLClientSetupEvent clientSetupEvent)
     {
 
-        //Rendering for blocks occurs on the Client side.
-        RenderTypeLookup.setRenderLayer(ModBlocks.HORIZONTAL_PANE.get(), RenderType.getCutout());
-
-        RenderTypeLookup.setRenderLayer(ModBlocks.GLASS_PANE.get(), RenderType.getCutout());
-
-        RenderTypeLookup.setRenderLayer(ModBlocks.WHITE_STAINED_PANE.get(), RenderType.getTranslucent());
-        RenderTypeLookup.setRenderLayer(ModBlocks.RED_STAINED_PANE.get(), RenderType.getTranslucent());
-        RenderTypeLookup.setRenderLayer(ModBlocks.ORANGE_STAINED_PANE.get(), RenderType.getTranslucent());
-        RenderTypeLookup.setRenderLayer(ModBlocks.PINK_STAINED_PANE.get(), RenderType.getTranslucent());
-        RenderTypeLookup.setRenderLayer(ModBlocks.YELLOW_STAINED_PANE.get(), RenderType.getTranslucent());
-        RenderTypeLookup.setRenderLayer(ModBlocks.LIME_STAINED_PANE.get(), RenderType.getTranslucent());
-        RenderTypeLookup.setRenderLayer(ModBlocks.GREEN_STAINED_PANE.get(), RenderType.getTranslucent());
-        RenderTypeLookup.setRenderLayer(ModBlocks.LIGHT_BLUE_STAINED_PANE.get(), RenderType.getTranslucent());
-        RenderTypeLookup.setRenderLayer(ModBlocks.CYAN_STAINED_PANE.get(), RenderType.getTranslucent());
-        RenderTypeLookup.setRenderLayer(ModBlocks.BLUE_STAINED_PANE.get(), RenderType.getTranslucent());
-        RenderTypeLookup.setRenderLayer(ModBlocks.MAGENTA_STAINED_PANE.get(), RenderType.getTranslucent());
-        RenderTypeLookup.setRenderLayer(ModBlocks.PURPLE_STAINED_PANE.get(), RenderType.getTranslucent());
-        RenderTypeLookup.setRenderLayer(ModBlocks.BROWN_STAINED_PANE.get(), RenderType.getTranslucent());
-        RenderTypeLookup.setRenderLayer(ModBlocks.GRAY_STAINED_PANE.get(), RenderType.getTranslucent());
-        RenderTypeLookup.setRenderLayer(ModBlocks.LIGHT_GRAY_STAINED_PANE.get(), RenderType.getTranslucent());
-        RenderTypeLookup.setRenderLayer(ModBlocks.BLACK_STAINED_PANE.get(), RenderType.getTranslucent());
     }
 }

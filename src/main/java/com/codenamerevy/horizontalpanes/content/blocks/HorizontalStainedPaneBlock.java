@@ -22,12 +22,11 @@ import net.minecraft.world.IBlockReader;
 import net.minecraft.world.IWorld;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.api.distmarker.OnlyIn;
-import net.minecraftforge.common.Tags;
 
-@SuppressWarnings("deprecation")
-public class HorizontalPaneBlock extends GlassBlock implements IWaterLoggable
+public class HorizontalStainedPaneBlock extends StainedGlassBlock implements IWaterLoggable
 {
-    //Values for Voxel shape of a block. Doesn't have to be like this, but for readability I've put it like this.
+    private final DyeColor color;
+
     private double nodeX = 0.0D;
     private double nodeY = 6.0D;
     private double nodeZ = 0.0D;
@@ -40,9 +39,9 @@ public class HorizontalPaneBlock extends GlassBlock implements IWaterLoggable
     private final VoxelShape SHAPE = Block.makeCuboidShape(nodeX, nodeY, nodeZ, extX, extY, extZ);
     private final VoxelShape SHAPE_TOP = Block.makeCuboidShape(nodeX, nodeY + 8D, nodeZ, extX, extY + 8D, extZ);
 
-    public HorizontalPaneBlock(Properties properties) {
-        super(properties.hardnessAndResistance(0.3F, 0.3F).sound(SoundType.GLASS).variableOpacity()); //notSolid for rendering and hardnessAndResistance to match the glass block.
-        this.setDefaultState(this.getStateContainer().getBaseState().with(WATERLOGGED, false));
+    public HorizontalStainedPaneBlock(DyeColor color, Block.Properties properties) {
+        super(color, properties.hardnessAndResistance(0.3F, 0.3F).sound(SoundType.GLASS).variableOpacity()); //notSolid for rendering and hardnessAndResistance to match the glass block.
+        this.setDefaultState(this.getStateContainer().getBaseState().with(WATERLOGGED, false));        this.color = color;
     }
 
     @OnlyIn(Dist.CLIENT)
@@ -50,6 +49,14 @@ public class HorizontalPaneBlock extends GlassBlock implements IWaterLoggable
         return adjacentBlockState.getBlock() == this ? true : super.isSideInvisible(state, adjacentBlockState, side);
     }
 
+    //Returns which side of the block will be invisible and when.
+    public DyeColor getColor() {
+        return this.color;
+    }
+
+    public BlockRenderLayer getRenderLayer() {
+        return BlockRenderLayer.TRANSLUCENT;
+    }
 
     //Returns the value of light that can pass through the block???
     public float getAmbientOcclusionLightValue(BlockState state, IBlockReader worldIn, BlockPos pos) {
