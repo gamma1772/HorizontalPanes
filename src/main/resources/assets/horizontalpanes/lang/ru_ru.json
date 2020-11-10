@@ -1,0 +1,22 @@
+{
+  "block.horizontalpanes.horizontal_pane": "Горизонтальная панель",
+
+  "block.horizontalpanes.horizontal_glass_pane": "Горизонтальная стеклянная панель",
+
+  "block.horizontalpanes.horizontal_stained_white_pane": "Белая горизонтальная стеклянная панель",
+  "block.horizontalpanes.horizontal_stained_red_pane": "Красная горизонтальная стеклянная панель",
+  "block.horizontalpanes.horizontal_stained_orange_pane": "Оранжевая горизонтальная стеклянная панель",
+  "block.horizontalpanes.horizontal_stained_pink_pane": "Розовая горизонтальная стеклянная панель",
+  "block.horizontalpanes.horizontal_stained_yellow_pane": ":Желтая горизонтальная стеклянная панель",
+  "block.horizontalpanes.horizontal_stained_lime_pane": "Лаймовая горизонтальная стеклянная панель",
+  "block.horizontalpanes.horizontal_stained_green_pane": "Знленаяя горизонтальная стеклянная панель",
+  "block.horizontalpanes.horizontal_stained_light_blue_pane": "Голубая горизонтальная стеклянная панель",
+  "block.horizontalpanes.horizontal_stained_cyan_pane": "Бирюзовая горизонтальная стеклянная панель",
+  "block.horizontalpanes.horizontal_stained_blue_pane": "Синяя горизонтальная стеклянная панель",
+  "block.horizontalpanes.horizontal_stained_magenta_pane": "Сиреневая горизонтальная стеклянная панель",
+  "block.horizontalpanes.horizontal_stained_purple_pane": "Фиолетовая горизонтальная стеклянная панель",
+  "block.horizontalpanes.horizontal_stained_brown_pane": "Коричневая горизонтальная стеклянная панель",
+  "block.horizontalpanes.horizontal_stained_gray_pane": "Серая горизонтальная стеклянная панель",
+  "block.horizontalpanes.horizontal_stained_light_gray_pane": "Светло-серая горизонтальная стеклянная панель",
+  "block.horizontalpanes.horizontal_stained_black_pane": "Черная горизонтальная стеклянная панель"
+}
