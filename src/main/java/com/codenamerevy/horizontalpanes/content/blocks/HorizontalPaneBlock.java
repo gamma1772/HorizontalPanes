@@ -21,17 +21,12 @@ import net.minecraftforge.common.ToolType;
 public class HorizontalPaneBlock extends GlassBlock implements IWaterLoggable
 {
     //Values for Voxel shape of a block. Doesn't have to be like this, but for readability I've put it like this.
-    private double nodeX = 0.0D;
-    private double nodeY = 6.0D;
-    private double nodeZ = 0.0D;
-
-    private double extX = 16.0D;
-    private double extY = 8.0D;
-    private double extZ = 16.0D;
+    private double nodeX = 0.0D, nodeY = 6.0D, nodeZ = 0.0D;
+    private double extX = 16.0D, extY = 8.0D, extZ = 16.0D;
 
     private static final BooleanProperty WATERLOGGED = BlockStateProperties.WATERLOGGED;
     private final VoxelShape SHAPE = Block.makeCuboidShape(nodeX, nodeY, nodeZ, extX, extY, extZ);
-    private final VoxelShape SHAPE_TOP = Block.makeCuboidShape(nodeX, nodeY + 8D, nodeZ, extX, extY + 8D, extZ);
+    //private final VoxelShape SHAPE_TOP = Block.makeCuboidShape(nodeX, nodeY + 8D, nodeZ, extX, extY + 8D, extZ);
 
     public HorizontalPaneBlock(Properties properties) {
         super(properties.notSolid().hardnessAndResistance(0.3F, 0.3F).sound(SoundType.GLASS)); //notSolid for rendering and hardnessAndResistance to match the glass block.

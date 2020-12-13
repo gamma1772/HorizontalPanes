@@ -19,7 +19,7 @@ public class HorizontalPanes
 
     public HorizontalPanes()
     {
-        final ModLoadingContext modLoadingContext = ModLoadingContext.get();
+        //final ModLoadingContext modLoadingContext = ModLoadingContext.get();
         final IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
         modEventBus.addListener(this::commonSetup);
