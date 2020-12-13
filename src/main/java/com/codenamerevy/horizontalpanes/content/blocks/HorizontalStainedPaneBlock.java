@@ -1,6 +1,5 @@
 package com.codenamerevy.horizontalpanes.content.blocks;
 
-import it.unimi.dsi.fastutil.objects.Object2ByteLinkedOpenHashMap;
 import net.minecraft.block.*;
 import net.minecraft.fluid.FluidState;
 import net.minecraft.fluid.Fluids;
@@ -14,10 +13,8 @@ import net.minecraft.tags.FluidTags;
 import net.minecraft.util.BlockRenderLayer;
 import net.minecraft.util.Direction;
 import net.minecraft.util.math.BlockPos;
-import net.minecraft.util.math.shapes.IBooleanFunction;
 import net.minecraft.util.math.shapes.ISelectionContext;
 import net.minecraft.util.math.shapes.VoxelShape;
-import net.minecraft.util.math.shapes.VoxelShapes;
 import net.minecraft.world.IBlockReader;
 import net.minecraft.world.IWorld;
 import net.minecraftforge.api.distmarker.Dist;
@@ -27,17 +24,12 @@ public class HorizontalStainedPaneBlock extends StainedGlassBlock implements IWa
 {
     private final DyeColor color;
 
-    private double nodeX = 0.0D;
-    private double nodeY = 6.0D;
-    private double nodeZ = 0.0D;
-
-    private double extX = 16.0D;
-    private double extY = 8.0D;
-    private double extZ = 16.0D;
+    private static final double nodeX = 0.0D, nodeY = 6.0D, nodeZ = 0.0D;
+    private static final double extX = 16.0D, extY = 8.0D, extZ = 16.0D;
 
     private static final BooleanProperty WATERLOGGED = BlockStateProperties.WATERLOGGED;
-    private final VoxelShape SHAPE = Block.makeCuboidShape(nodeX, nodeY, nodeZ, extX, extY, extZ);
-    private final VoxelShape SHAPE_TOP = Block.makeCuboidShape(nodeX, nodeY + 8D, nodeZ, extX, extY + 8D, extZ);
+    private static final VoxelShape SHAPE = Block.makeCuboidShape(nodeX, nodeY, nodeZ, extX, extY, extZ);
+    //private final VoxelShape SHAPE_TOP = Block.makeCuboidShape(nodeX, nodeY + 8D, nodeZ, extX, extY + 8D, extZ);
 
     public HorizontalStainedPaneBlock(DyeColor color, Block.Properties properties) {
         super(color, properties.hardnessAndResistance(0.3F, 0.3F).sound(SoundType.GLASS).variableOpacity()); //notSolid for rendering and hardnessAndResistance to match the glass block.

@@ -4,7 +4,6 @@ import com.codenamerevy.horizontalpanes.content.blocks.ModBlocks;
 import com.codenamerevy.horizontalpanes.content.items.ModItems;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.IEventBus;
-import net.minecraftforge.fml.ModLoadingContext;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
@@ -17,7 +16,7 @@ public class HorizontalPanes
 
     public HorizontalPanes()
     {
-        final ModLoadingContext modLoadingContext = ModLoadingContext.get();
+        //final ModLoadingContext modLoadingContext = ModLoadingContext.get();
         final IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
         modEventBus.addListener(this::commonSetup);
