@@ -1,0 +1,22 @@
+{
+  "block.horizontalpanes.horizontal_pane": "수평판",
+
+  "block.horizontalpanes.horizontal_glass_pane": "수평 유리판",
+
+  "block.horizontalpanes.horizontal_stained_white_pane": "하얀색 염색된 수평 유리판",
+  "block.horizontalpanes.horizontal_stained_red_pane": "빨간색 염색된 수평 유리판",
+  "block.horizontalpanes.horizontal_stained_orange_pane": "주황색 염색된 수평 유리판",
+  "block.horizontalpanes.horizontal_stained_pink_pane": "분홍색 염색된 수평 유리판",
+  "block.horizontalpanes.horizontal_stained_yellow_pane": "노란색 염색된 수평 유리판",
+  "block.horizontalpanes.horizontal_stained_lime_pane": "연두색 염색된 수평 유리판",
+  "block.horizontalpanes.horizontal_stained_green_pane": "초록색 염색된 수평 유리판",
+  "block.horizontalpanes.horizontal_stained_light_blue_pane": "하늘색 염색된 수평 유리판",
+  "block.horizontalpanes.horizontal_stained_cyan_pane": "청록색 염색된 수평 유리판",
+  "block.horizontalpanes.horizontal_stained_blue_pane": "파란색 염색된 수평 유리판",
+  "block.horizontalpanes.horizontal_stained_magenta_pane": "자홍색 염색된 수평 유리판",
+  "block.horizontalpanes.horizontal_stained_purple_pane": "보라색 염색된 수평 유리판",
+  "block.horizontalpanes.horizontal_stained_brown_pane": "갈색 염색된 수평 유리판",
+  "block.horizontalpanes.horizontal_stained_gray_pane": "회색 염색된 수평 유리판",
+  "block.horizontalpanes.horizontal_stained_light_gray_pane": "회백색 염색된 수평 유리판",
+  "block.horizontalpanes.horizontal_stained_black_pane": "검은색 염색된 수평 유리판"
+}
