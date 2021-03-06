@@ -1,0 +1,7 @@
+{
+  "parent": "horizontalpanes:block/parent/pane_top",
+  "textures": {
+    "glass": "horizontalpanes:block/glass",
+    "edges": "horizontalpanes:block/glass_edge"
+  }
+}

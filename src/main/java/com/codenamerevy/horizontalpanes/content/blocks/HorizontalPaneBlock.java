@@ -17,7 +17,7 @@ import net.minecraft.world.IBlockReader;
 import net.minecraft.world.IWorld;
 import net.minecraftforge.common.ToolType;
 
-@SuppressWarnings("deprecation")
+@Deprecated
 public class HorizontalPaneBlock extends GlassBlock implements IWaterLoggable
 {
     //Values for Voxel shape of a block. Doesn't have to be like this, but for readability I've put it like this.

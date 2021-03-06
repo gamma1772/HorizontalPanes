@@ -1,0 +1,7 @@
+{
+  "parent": "horizontalpanes:block/parent/pane_com",
+  "textures": {
+    "glass": "minecraft:block/glass",
+    "edges": "minecraft:block/glass_pane_top"
+  }
+}
