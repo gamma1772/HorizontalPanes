@@ -35,7 +35,7 @@ public class HorizontalPaneBlock extends GlassBlock implements IWaterLoggable
 
     //Returns which side of the block will be invisible and when.
     public boolean isSideInvisible(BlockState state, BlockState adjacentBlockState, Direction side) {
-        return adjacentBlockState.isIn(this) ? true : super.isSideInvisible(state, adjacentBlockState, side);
+        return adjacentBlockState.matchesBlock(this) ? true : super.isSideInvisible(state, adjacentBlockState, side);
     }
 
     //Returns the value of light that can pass through the block???

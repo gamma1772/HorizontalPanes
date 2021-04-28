@@ -40,7 +40,7 @@ public class HorizontalPanes
     {
 
         //Rendering for blocks occurs on the Client side.
-        RenderTypeLookup.setRenderLayer(ModBlocks.HORIZONTAL_PANE.get(), RenderType.getCutout());
+        //RenderTypeLookup.setRenderLayer(ModBlocks.HORIZONTAL_PANE.get(), RenderType.getCutout());
 
         RenderTypeLookup.setRenderLayer(ModBlocks.GLASS_PANE.get(), RenderType.getCutout());
 

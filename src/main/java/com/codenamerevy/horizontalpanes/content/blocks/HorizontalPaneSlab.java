@@ -80,7 +80,7 @@ public class HorizontalPaneSlab extends SlabBlock implements IWaterLoggable {
 		BlockPos blockPos = ctx.getPos();
 		BlockState blockState = ctx.getWorld().getBlockState(blockPos);
 		FluidState fluidState = ctx.getWorld().getFluidState(blockPos);
-		if (blockState.isIn(this)) {
+		if (blockState.matchesBlock(this)) {
 			return blockState.with(TYPE, SlabType.DOUBLE).with(WATERLOGGED, fluidState.getFluid() == Fluids.WATER);
 		} else {
 			BlockState blockState2 = this.getDefaultState().with(TYPE, SlabType.BOTTOM).with(WATERLOGGED, fluidState.getFluid() == Fluids.WATER);

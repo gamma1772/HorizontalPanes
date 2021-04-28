@@ -14,7 +14,7 @@ public class ModBlocks
     //Deferred Registry for Blocks
     public static final DeferredRegister<Block> BLOCKS = DeferredRegister.create(ForgeRegistries.BLOCKS, HorizontalPanes.MODID);
 
-    public static final RegistryObject<Block> HORIZONTAL_PANE           = BLOCKS.register("horizontal_pane",                    () -> new HorizontalPaneSlab(AbstractBlock.Properties.create(Material.GLASS)));
+    //public static final RegistryObject<Block> HORIZONTAL_PANE           = BLOCKS.register("horizontal_pane",                    () -> new HorizontalPaneSlab(AbstractBlock.Properties.create(Material.GLASS)));
 
     public static final RegistryObject<Block> GLASS_PANE                = BLOCKS.register("horizontal_glass_pane",              () -> new HorizontalPaneSlab(AbstractBlock.Properties.create(Material.GLASS)));
 
