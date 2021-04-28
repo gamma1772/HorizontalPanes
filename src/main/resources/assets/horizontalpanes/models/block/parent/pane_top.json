@@ -1,0 +1,68 @@
+{
+	"credit": "Made using Blockbench by CodenameRevy",
+	"textures": {
+		"particle": "#edges"
+	},
+	"elements": [
+		{
+			"name": "bottom",
+			"from": [0, 14, 0],
+			"to": [16, 14, 16],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 14, 8]},
+			"faces": {
+				"up": {"uv": [0, 0, 16, 16], "texture": "#glass"},
+				"down": {"uv": [0, 0, 16, 16], "texture": "#glass"}
+			}
+		},
+		{
+			"name": "top",
+			"from": [0, 16, 0],
+			"to": [16, 16, 16],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 16, 8]},
+			"faces": {
+				"up": {"uv": [0, 0, 16, 16], "texture": "#glass"},
+				"down": {"uv": [0, 0, 16, 16], "texture": "#glass"}
+			}
+		},
+		{
+			"name": "south",
+			"from": [0, 14, 15.999],
+			"to": [16, 16, 15.999],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 15, 8]},
+			"faces": {
+				"north": {"uv": [7, 0, 9, 16], "rotation": 90, "texture": "#edges", "cullface": "south"},
+				"south": {"uv": [7, 0, 9, 16], "rotation": 90, "texture": "#edges", "cullface": "south"}
+			}
+		},
+		{
+			"name": "east",
+			"from": [15.999, 14, 0],
+			"to": [15.999, 16, 16],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 15, 8]},
+			"faces": {
+				"east": {"uv": [7, 0, 9, 16], "rotation": 90, "texture": "#edges", "cullface": "east"},
+				"west": {"uv": [7, 0, 9, 16], "rotation": 90, "texture": "#edges", "cullface": "east"}
+			}
+		},
+		{
+			"name": "north",
+			"from": [0, 14, 0.001],
+			"to": [16, 16, 0.001],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 15, 8]},
+			"faces": {
+				"north": {"uv": [7, 0, 9, 16], "rotation": 90, "texture": "#edges", "cullface": "north"},
+				"south": {"uv": [7, 0, 9, 16], "rotation": 90, "texture": "#edges", "cullface": "north"}
+			}
+		},
+		{
+			"name": "west",
+			"from": [0.001, 14, 0],
+			"to": [0.001, 16, 16],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 15, 8]},
+			"faces": {
+				"east": {"uv": [7, 0, 9, 16], "rotation": 90, "texture": "#edges", "cullface": "west"},
+				"west": {"uv": [7, 0, 9, 16], "rotation": 90, "texture": "#edges", "cullface": "west"}
+			}
+		}
+	]
+}

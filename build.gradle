@@ -5,7 +5,7 @@ buildscript {
         mavenCentral()
     }
     dependencies {
-        classpath group: 'net.minecraftforge.gradle', name: 'ForgeGradle', version: '3.+', changing: true
+        classpath group: 'net.minecraftforge.gradle', name: 'ForgeGradle', version: '4.+', changing: true
     }
 }
 apply plugin: 'net.minecraftforge.gradle'
@@ -13,14 +13,14 @@ apply plugin: 'net.minecraftforge.gradle'
 apply plugin: 'idea'
 apply plugin: 'maven-publish'
 
-version = '1.0.4'
+version = '1.1.1'
 group = 'com.codenamerevy.horizontalpanes' // http://maven.apache.org/guides/mini/guide-naming-conventions.html
-archivesBaseName = '1.15.2-horizontalpanes'
+archivesBaseName = '[' + '1.15.2' + ']' + '-horizontalpanes'
 
 sourceCompatibility = targetCompatibility = compileJava.sourceCompatibility = compileJava.targetCompatibility = '1.8' // Need this here so eclipse task generates correctly.
 
 minecraft {
-    mappings channel: 'snapshot', version: '20201213-1.15.1'
+    mappings channel: 'snapshot', version: '20210428-1.15.1'
     runs {
         client {
             workingDirectory project.file('run')
@@ -75,7 +75,7 @@ minecraft {
 }
 
 dependencies {
-    minecraft 'net.minecraftforge:forge:1.15.2-31.2.47'
+    minecraft 'net.minecraftforge:forge:1.15.2-31.2.50'
 
 }
 

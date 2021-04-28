@@ -1,7 +1,13 @@
 {
   "variants": {
-    "": {
+    "type=bottom": {
       "model": "horizontalpanes:block/horizontal_stained_brown_pane"
+    },
+    "type=double": {
+      "model": "horizontalpanes:block/horizontal_stained_brown_pane_combined"
+    },
+    "type=top": {
+      "model": "horizontalpanes:block/horizontal_stained_brown_pane_top"
     }
   }
 }

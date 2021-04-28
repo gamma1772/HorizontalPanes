@@ -14,9 +14,9 @@ public class ModItems
     //Deferred Registry for Items
     public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, HorizontalPanes.MODID);
 
-    public static final RegistryObject<Item> HORIZONTAL_PANE            = ITEMS.register("horizontal_pane",                       () -> new BlockItem(ModBlocks.HORIZONTAL_PANE.get(),            new Item.Properties()));
+    //public static final RegistryObject<Item> HORIZONTAL_PANE            = ITEMS.register("horizontal_pane",                       () -> new BlockItem(ModBlocks.HORIZONTAL_PANE.get(),            new Item.Properties()));
 
-    public static final RegistryObject<Item> GLASS_PANE                 = ITEMS.register("horizontal_glass_pane",                            () -> new BlockItem(ModBlocks.HORIZONTAL_PANE.get(),            new Item.Properties().group(ItemGroup.DECORATIONS)));
+    public static final RegistryObject<Item> GLASS_PANE                 = ITEMS.register("horizontal_glass_pane",                            () -> new BlockItem(ModBlocks.GLASS_PANE.get(),            new Item.Properties().group(ItemGroup.DECORATIONS)));
 
     public static final RegistryObject<Item> WHITE_STAINED_PANE         = ITEMS.register("horizontal_stained_white_pane",         () -> new BlockItem(ModBlocks.WHITE_STAINED_PANE.get(),         new Item.Properties().group(ItemGroup.DECORATIONS)));
     public static final RegistryObject<Item> RED_STAINED_PANE           = ITEMS.register("horizontal_stained_red_pane",           () -> new BlockItem(ModBlocks.RED_STAINED_PANE.get(),           new Item.Properties().group(ItemGroup.DECORATIONS)));

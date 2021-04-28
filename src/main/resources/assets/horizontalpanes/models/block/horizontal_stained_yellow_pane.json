@@ -1,7 +1,7 @@
 {
-  "parent": "horizontalpanes:block/horizontal_pane_block",
+  "parent": "horizontalpanes:block/parent/pane_bot",
   "textures": {
-    "edge": "minecraft:block/yellow_stained_glass_pane_top",
-    "glass": "minecraft:block/yellow_stained_glass"
+    "glass": "minecraft:block/yellow_stained_glass",
+    "edges": "minecraft:block/yellow_stained_glass_pane_top"
   }
 }
