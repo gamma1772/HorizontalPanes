@@ -1,0 +1,22 @@
+{
+  "block.horizontalpanes.horizontal_pane": "Horisontell Ruta",
+
+  "block.horizontalpanes.horizontal_glass_pane": "Horisontell Glasruta",
+
+  "block.horizontalpanes.horizontal_stained_white_pane": "Vitfärgad Horisontell glasruta",
+  "block.horizontalpanes.horizontal_stained_red_pane": "Rödfärgad Horisontell glasruta",
+  "block.horizontalpanes.horizontal_stained_orange_pane": "Orangefärgad Horisontell glasruta",
+  "block.horizontalpanes.horizontal_stained_pink_pane": "Rosafärgad Horisontell glasruta",
+  "block.horizontalpanes.horizontal_stained_yellow_pane": "Gulfärgad Horisontell glasruta",
+  "block.horizontalpanes.horizontal_stained_lime_pane": "Limegrönfärgad Horisontell glasruta",
+  "block.horizontalpanes.horizontal_stained_green_pane": "Grönfärgad Horisontell glasruta",
+  "block.horizontalpanes.horizontal_stained_light_blue_pane": "Ljusblåfärgad Horisontell glasruta",
+  "block.horizontalpanes.horizontal_stained_cyan_pane": "Turkosfärgad Horisontell glasruta",
+  "block.horizontalpanes.horizontal_stained_blue_pane": "Blåfärgad Horisontell glasruta",
+  "block.horizontalpanes.horizontal_stained_magenta_pane": "Ljuslilafärgad Horisontell glasruta",
+  "block.horizontalpanes.horizontal_stained_purple_pane": "Lilafärgad Horisontell glasruta",
+  "block.horizontalpanes.horizontal_stained_brown_pane": "Brunfärgad Horisontell glasruta",
+  "block.horizontalpanes.horizontal_stained_gray_pane": "Gråfärgad Horisontell glasruta",
+  "block.horizontalpanes.horizontal_stained_light_gray_pane": "Ljusgråfärgad Horisontell glasruta",
+  "block.horizontalpanes.horizontal_stained_black_pane": "Svartfärgad Horisontell glasruta"
+}
