@@ -1,15 +1,15 @@
 license="MIT License"
 modLoader="javafml" #mandatory
-loaderVersion="[35,)" #mandatory
-issueTrackerURL="https://github.com/CodenameRevy/Horizontal-Panes/issues" #optional
+loaderVersion="[37,)" #mandatory
+issueTrackerURL="https://github.com/Gamma1772/HorizontalPanes/issues" #optional
 [[mods]] #mandatory
 modId="horizontalpanes" #mandatory
 version="${file.jarVersion}" #mandatory
 displayName="Horizontal Glass Panes" #mandatory
-displayURL="https://github.com/CodenameRevy/Horizontal-Panes" #optional
+displayURL="https://github.com/Gamma1772/HorizontalPanes" #optional
 logoFile="horizontalpanes.png" #optional
-credits="CodenameRevy" #optional
-authors="CodenameRevy" #optional
+credits="Gamma1772 (CodenameRevy)" #optional
+authors="Gamma1772" #optional
 description='''
 Adds Horizontal Glass Panes to the game.
 '''
@@ -17,12 +17,12 @@ Adds Horizontal Glass Panes to the game.
 [[dependencies.horizontalpanes]] #optional
     modId="forge" #mandatory
     mandatory=true #mandatory
-    versionRange="[35,)" #mandatory
+    versionRange="[37,)" #mandatory
     ordering="NONE"
     side="BOTH"
 [[dependencies.horizontalpanes]]
     modId="minecraft"
     mandatory=true
-    versionRange="[1.16.4]"
+    versionRange="[1.17.1]"
     ordering="NONE"
     side="BOTH"
