@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "horizontalpanes:block/test_block"
+    },
+    "type=double": {
+      "model": "horizontalpanes:block/test_block_combined"
+    },
+    "type=top": {
+      "model": "horizontalpanes:block/test_block_top"
+    }
+  }
+}

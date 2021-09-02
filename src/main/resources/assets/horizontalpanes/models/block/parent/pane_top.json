@@ -1,5 +1,6 @@
 {
-	"credit": "Made using Blockbench by CodenameRevy",
+	"credit": "Made with Blockbench",
+	"ambientocclusion": true,
 	"textures": {
 		"particle": "#edges"
 	},
