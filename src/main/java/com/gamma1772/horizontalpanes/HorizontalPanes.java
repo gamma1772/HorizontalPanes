@@ -84,5 +84,6 @@ public class HorizontalPanes
         ItemBlockRenderTypes.setRenderLayer(ModBlocks.GRAY_STAINED_PANE.get(), RenderType.translucent());
         ItemBlockRenderTypes.setRenderLayer(ModBlocks.LIGHT_GRAY_STAINED_PANE.get(), RenderType.translucent());
         ItemBlockRenderTypes.setRenderLayer(ModBlocks.BLACK_STAINED_PANE.get(), RenderType.translucent());
+        ItemBlockRenderTypes.setRenderLayer(ModBlocks.TINTED_GLASS_PANE.get(), RenderType.translucent());
     }
 }

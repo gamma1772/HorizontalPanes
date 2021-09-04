@@ -57,4 +57,5 @@ public class ModItems
     public static final RegistryObject<Item> LIGHT_GRAY_STAINED_PANE    = ITEMS.register("horizontal_stained_light_gray_pane",    () -> new BlockItem(ModBlocks.LIGHT_GRAY_STAINED_PANE.get(),    new Item.Properties().tab(CreativeModeTab.TAB_DECORATIONS)));
     public static final RegistryObject<Item> BLACK_STAINED_PANE         = ITEMS.register("horizontal_stained_black_pane",         () -> new BlockItem(ModBlocks.BLACK_STAINED_PANE.get(),         new Item.Properties().tab(CreativeModeTab.TAB_DECORATIONS)));
 
+    public static final RegistryObject<Item> TINTED_GLASS_PANE = ITEMS.register("horizontal_tinted_glass_pane", () -> new BlockItem(ModBlocks.TINTED_GLASS_PANE.get(), new Item.Properties().tab(CreativeModeTab.TAB_DECORATIONS)));
 }

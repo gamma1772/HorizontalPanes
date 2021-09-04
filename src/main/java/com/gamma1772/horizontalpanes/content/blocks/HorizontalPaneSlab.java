@@ -115,4 +115,14 @@ public class HorizontalPaneSlab extends SlabBlock implements SimpleWaterloggedBl
 			return direction != Direction.DOWN && (direction == Direction.UP || !(ctx.getClickLocation().y - (double)blockPos.getY() > 0.5D)) ? blockState2 : blockState2.setValue(TYPE, SlabType.TOP);
 		}
 	}
+
+	@Override
+	public float getShadeBrightness(BlockState state, BlockGetter world, BlockPos pos) {
+		return 1F;
+	}
+
+	@Override
+	public boolean propagatesSkylightDown(BlockState state, BlockGetter world, BlockPos pos) {
+		return true;
+	}
 }

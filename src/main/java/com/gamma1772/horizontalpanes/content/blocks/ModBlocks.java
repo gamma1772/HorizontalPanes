@@ -63,18 +63,27 @@ public class ModBlocks
     public static final RegistryObject<Block> LIGHT_GRAY_STAINED_PANE   = BLOCKS.register("horizontal_stained_light_gray_pane", () -> createHorizontalPane(MaterialColor.COLOR_LIGHT_GRAY));
     public static final RegistryObject<Block> BLACK_STAINED_PANE        = BLOCKS.register("horizontal_stained_black_pane",      () -> createHorizontalPane(MaterialColor.COLOR_BLACK));
 
+    public static final RegistryObject<Block> TINTED_GLASS_PANE = BLOCKS.register("horizontal_tinted_glass_pane", ModBlocks::createTintedPane);
+
     private static HorizontalPaneSlab createHorizontalPane() {
         return new HorizontalPaneSlab(BlockBehaviour.Properties.of(Material.GLASS));
     }
 
-    private static HorizontalPaneSlab createHorizontalPane(MaterialColor color) {
-        return new HorizontalPaneSlab(BlockBehaviour.Properties.of(Material.GLASS, color));
+    private static HorizontalPaneSlab createTintedPane() {
+        return new TintedHorizontalPane(BlockBehaviour.Properties.of(Material.GLASS, MaterialColor.COLOR_GRAY).noOcclusion().isViewBlocking(ModBlocks::never).isSuffocating(ModBlocks::never).isValidSpawn(ModBlocks::never).isRedstoneConductor(ModBlocks::never).strength(0.3f, 0.3f).sound(SoundType.GLASS));
     }
 
-    private static HorizontalPaneSlab createHorizontalPane(Material material, MaterialColor color, SoundType sound) {
-        return new HorizontalPaneSlab(BlockBehaviour.Properties.of(material, color).sound(sound));
+    private static HorizontalPaneSlab createHorizontalPane(MaterialColor color) {
+        return new HorizontalPaneSlab(BlockBehaviour.Properties.of(Material.GLASS, color).noOcclusion().isViewBlocking(ModBlocks::never).isSuffocating(ModBlocks::never).isValidSpawn(ModBlocks::never).isRedstoneConductor(ModBlocks::never).strength(0.3f, 0.3f).sound(SoundType.GLASS));
     }
+
+//    private static HorizontalPaneSlab createHorizontalPane(Material material, MaterialColor color, SoundType sound) {
+//        return new HorizontalPaneSlab(BlockBehaviour.Properties.of(material, color).noOcclusion().isViewBlocking(ModBlocks::never).isSuffocating(ModBlocks::never).isValidSpawn(ModBlocks::never).isRedstoneConductor(ModBlocks::never).strength(0.3f, 0.3f).sound(sound));
+//    }
 
     private static Boolean never(BlockState blockState, BlockGetter blockView, BlockPos blockPos, EntityType<?> entityType) { return false; }
     private static boolean never(BlockState blockState, BlockGetter blockView, BlockPos blockPos) { return false; }
+
+    private static Boolean always(BlockState blockState, BlockGetter blockView, BlockPos blockPos, EntityType<?> entityType) { return true; }
+    private static boolean always(BlockState blockState, BlockGetter blockView, BlockPos blockPos) { return true; }
 }
