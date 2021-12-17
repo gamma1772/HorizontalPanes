@@ -43,7 +43,6 @@ public class HorizontalPanes
 
     public HorizontalPanes()
     {
-        //final ModLoadingContext modLoadingContext = ModLoadingContext.get();
         final IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
         modEventBus.addListener(this::commonSetup);
@@ -64,7 +63,6 @@ public class HorizontalPanes
     {
 
         //Rendering for blocks occurs on the Client side.
-        //RenderTypeLookup.setRenderLayer(ModBlocks.HORIZONTAL_PANE.get(), RenderType.getCutout());
 
         ItemBlockRenderTypes.setRenderLayer(ModBlocks.GLASS_PANE.get(), RenderType.cutout());
 
