@@ -38,6 +38,7 @@ import net.minecraft.world.level.material.Fluids;
 import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.shapes.Shapes;
 import net.minecraft.world.phys.shapes.VoxelShape;
+import org.jetbrains.annotations.NotNull;
 
 import javax.annotation.Nullable;
 
@@ -63,14 +64,11 @@ public class HorizontalPaneSlab extends SlabBlock implements SimpleWaterloggedBl
 	@Override
 	public VoxelShape getShape(BlockState state, BlockGetter worldIn, BlockPos pos, CollisionContext context) {
 		SlabType slabType = state.getValue(TYPE);
-		switch(slabType) {
-			case DOUBLE:
-				return SHAPE_COM;
-			case TOP:
-				return SHAPE_TOP;
-			default:
-				return SHAPE_BOT;
-		}
+		return switch (slabType) {
+			case DOUBLE -> SHAPE_COM;
+			case TOP -> SHAPE_TOP;
+			default -> SHAPE_BOT;
+		};
 	}
 
 	@Override
@@ -117,12 +115,12 @@ public class HorizontalPaneSlab extends SlabBlock implements SimpleWaterloggedBl
 	}
 
 	@Override
-	public float getShadeBrightness(BlockState state, BlockGetter world, BlockPos pos) {
+	public float getShadeBrightness(@NotNull BlockState state, @NotNull BlockGetter world, @NotNull BlockPos pos) {
 		return 1F;
 	}
 
 	@Override
-	public boolean propagatesSkylightDown(BlockState state, BlockGetter world, BlockPos pos) {
+	public boolean propagatesSkylightDown(@NotNull BlockState state, @NotNull BlockGetter world, @NotNull BlockPos pos) {
 		return true;
 	}
 }
