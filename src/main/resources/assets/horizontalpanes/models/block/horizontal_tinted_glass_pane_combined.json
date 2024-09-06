@@ -1,5 +1,6 @@
 {
   "parent": "horizontalpanes:block/parent/pane_com",
+  "render_type": "translucent",
   "textures": {
     "glass": "minecraft:block/tinted_glass",
     "edges": "horizontalpanes:block/tinted_glass_pane_top"
