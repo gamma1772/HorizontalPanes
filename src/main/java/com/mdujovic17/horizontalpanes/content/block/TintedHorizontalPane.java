@@ -1,4 +1,4 @@
-package com.gamma1772.horizontalpanes.content.blocks;
+package com.mdujovic17.horizontalpanes.content.block;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.world.level.BlockGetter;

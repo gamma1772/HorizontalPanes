@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  * */
-package com.gamma1772.horizontalpanes.content.blocks;
+package com.mdujovic17.horizontalpanes.content.block;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
