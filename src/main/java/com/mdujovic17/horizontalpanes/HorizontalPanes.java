@@ -21,67 +21,35 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  * */
-package com.gamma1772.horizontalpanes;
+package com.mdujovic17.horizontalpanes;
 
-import com.gamma1772.horizontalpanes.content.blocks.ModBlocks;
-import com.gamma1772.horizontalpanes.content.items.ModItems;
-import net.minecraft.client.renderer.ItemBlockRenderTypes;
-import net.minecraft.client.renderer.RenderType;
+import com.mdujovic17.horizontalpanes.registry.ModBlocks;
+import com.mdujovic17.horizontalpanes.registry.ModCreativeTabs;
+import com.mdujovic17.horizontalpanes.registry.ModItems;
+import com.mojang.logging.LogUtils;
+import net.neoforged.bus.api.IEventBus;
+import net.neoforged.fml.ModContainer;
+import net.neoforged.fml.common.Mod;
+import net.neoforged.fml.event.lifecycle.FMLCommonSetupEvent;
+import org.slf4j.Logger;
 
-import net.minecraftforge.common.MinecraftForge;
-import net.minecraftforge.eventbus.api.IEventBus;
-
-import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
-import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
-import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
-
-@Mod("horizontalpanes")
+@Mod(HorizontalPanes.MODID)
 public class HorizontalPanes
 {
     public static final String MODID = "horizontalpanes";
+    public static final Logger LOGGER = LogUtils.getLogger();
 
-    public HorizontalPanes()
+    public HorizontalPanes(IEventBus modEventBus, ModContainer modContainer)
     {
-        final IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
-
         modEventBus.addListener(this::commonSetup);
-        modEventBus.addListener(this::clientSetup);
 
-        //Registering deferred registers
         ModBlocks.BLOCKS.register(modEventBus);
         ModItems.ITEMS.register(modEventBus);
-
-        MinecraftForge.EVENT_BUS.register(this);
+        ModCreativeTabs.CREATIVE_MODE_TABS.register(modEventBus);
     }
 
-    private void commonSetup(final FMLCommonSetupEvent common)
+    private void commonSetup(final FMLCommonSetupEvent event)
     {
 
-    }
-    private void clientSetup(final FMLClientSetupEvent client)
-    {
-
-        //Rendering for blocks occurs on the Client side.
-
-        ItemBlockRenderTypes.setRenderLayer(ModBlocks.GLASS_PANE.get(), RenderType.cutout());
-
-        ItemBlockRenderTypes.setRenderLayer(ModBlocks.WHITE_STAINED_PANE.get(), RenderType.translucent());
-        ItemBlockRenderTypes.setRenderLayer(ModBlocks.RED_STAINED_PANE.get(), RenderType.translucent());
-        ItemBlockRenderTypes.setRenderLayer(ModBlocks.ORANGE_STAINED_PANE.get(), RenderType.translucent());
-        ItemBlockRenderTypes.setRenderLayer(ModBlocks.PINK_STAINED_PANE.get(), RenderType.translucent());
-        ItemBlockRenderTypes.setRenderLayer(ModBlocks.YELLOW_STAINED_PANE.get(), RenderType.translucent());
-        ItemBlockRenderTypes.setRenderLayer(ModBlocks.LIME_STAINED_PANE.get(), RenderType.translucent());
-        ItemBlockRenderTypes.setRenderLayer(ModBlocks.GREEN_STAINED_PANE.get(), RenderType.translucent());
-        ItemBlockRenderTypes.setRenderLayer(ModBlocks.LIGHT_BLUE_STAINED_PANE.get(), RenderType.translucent());
-        ItemBlockRenderTypes.setRenderLayer(ModBlocks.CYAN_STAINED_PANE.get(), RenderType.translucent());
-        ItemBlockRenderTypes.setRenderLayer(ModBlocks.BLUE_STAINED_PANE.get(), RenderType.translucent());
-        ItemBlockRenderTypes.setRenderLayer(ModBlocks.MAGENTA_STAINED_PANE.get(), RenderType.translucent());
-        ItemBlockRenderTypes.setRenderLayer(ModBlocks.PURPLE_STAINED_PANE.get(), RenderType.translucent());
-        ItemBlockRenderTypes.setRenderLayer(ModBlocks.BROWN_STAINED_PANE.get(), RenderType.translucent());
-        ItemBlockRenderTypes.setRenderLayer(ModBlocks.GRAY_STAINED_PANE.get(), RenderType.translucent());
-        ItemBlockRenderTypes.setRenderLayer(ModBlocks.LIGHT_GRAY_STAINED_PANE.get(), RenderType.translucent());
-        ItemBlockRenderTypes.setRenderLayer(ModBlocks.BLACK_STAINED_PANE.get(), RenderType.translucent());
-        ItemBlockRenderTypes.setRenderLayer(ModBlocks.TINTED_GLASS_PANE.get(), RenderType.translucent());
     }
 }
