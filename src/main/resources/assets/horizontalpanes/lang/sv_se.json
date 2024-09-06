@@ -18,5 +18,7 @@
   "block.horizontalpanes.horizontal_stained_brown_pane": "Brunfärgad Horisontell glasruta",
   "block.horizontalpanes.horizontal_stained_gray_pane": "Gråfärgad Horisontell glasruta",
   "block.horizontalpanes.horizontal_stained_light_gray_pane": "Ljusgråfärgad Horisontell glasruta",
-  "block.horizontalpanes.horizontal_stained_black_pane": "Svartfärgad Horisontell glasruta"
+  "block.horizontalpanes.horizontal_stained_black_pane": "Svartfärgad Horisontell glasruta",
+
+  "itemGroup.horizontalpanes.horizontalpanes": "Horizontal Panes"
 }

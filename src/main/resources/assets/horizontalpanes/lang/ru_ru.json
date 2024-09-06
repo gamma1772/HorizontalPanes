@@ -18,5 +18,7 @@
   "block.horizontalpanes.horizontal_stained_brown_pane": "Коричневая горизонтальная стеклянная панель",
   "block.horizontalpanes.horizontal_stained_gray_pane": "Серая горизонтальная стеклянная панель",
   "block.horizontalpanes.horizontal_stained_light_gray_pane": "Светло-серая горизонтальная стеклянная панель",
-  "block.horizontalpanes.horizontal_stained_black_pane": "Черная горизонтальная стеклянная панель"
+  "block.horizontalpanes.horizontal_stained_black_pane": "Черная горизонтальная стеклянная панель",
+
+  "itemGroup.horizontalpanes.horizontalpanes": "Horizontal Panes"
 }

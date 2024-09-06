@@ -19,5 +19,7 @@
   "block.horizontalpanes.horizontal_stained_gray_pane": "Pannello di vetro orizzontale grigio",
   "block.horizontalpanes.horizontal_stained_light_gray_pane": "Pannello di vetro orizzontale grigio chiaro",
   "block.horizontalpanes.horizontal_stained_black_pane": "Pannello di vetro orizzontale nero",
-  "block.horizontalpanes.horizontal_tinted_glass_pane": "Pannello di vetro orizzontale oscurato"
+  "block.horizontalpanes.horizontal_tinted_glass_pane": "Pannello di vetro orizzontale oscurato",
+
+  "itemGroup.horizontalpanes.horizontalpanes": "Horizontal Panes"
 }
