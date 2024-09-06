@@ -23,4 +23,8 @@ run
 
 # Files from Forge MDK
 forge*changelog.txt
+logs
+.vscode
 /logs/
+./logs
+/src/generated/resources/.cache/
