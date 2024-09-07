@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "group": "glass_panes",
+  "ingredients": [
+    {
+      "item": "horizontalpanes:horizontal_stained_magenta_pane"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "minecraft:magenta_stained_glass_pane"
+  }
+}
