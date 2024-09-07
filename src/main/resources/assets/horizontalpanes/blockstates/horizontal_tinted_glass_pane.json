@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "horizontalpanes:block/horizontal_tinted_glass_pane"
+    },
+    "type=double": {
+      "model": "horizontalpanes:block/horizontal_tinted_glass_pane_combined"
+    },
+    "type=top": {
+      "model": "horizontalpanes:block/horizontal_tinted_glass_pane_top"
+    }
+  }
+}

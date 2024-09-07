@@ -18,6 +18,7 @@
     "horizontalpanes:horizontal_stained_brown_pane",
     "horizontalpanes:horizontal_stained_gray_pane",
     "horizontalpanes:horizontal_stained_light_gray_pane",
-    "horizontalpanes:horizontal_stained_black_pane"
+    "horizontalpanes:horizontal_stained_black_pane",
+    "horizontalpanes:horizontal_tinted_glass_pane"
   ]
 }

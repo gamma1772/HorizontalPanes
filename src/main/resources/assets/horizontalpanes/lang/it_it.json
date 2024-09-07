@@ -1,0 +1,25 @@
+{
+  "block.horizontalpanes.horizontal_pane": "Pannello orizzontale",
+
+  "block.horizontalpanes.horizontal_glass_pane": "Pannello di vetro orizzontale",
+
+  "block.horizontalpanes.horizontal_stained_white_pane": "Pannello di vetro orizzontale bianco",
+  "block.horizontalpanes.horizontal_stained_red_pane": "Pannello di vetro orizzontale rosso",
+  "block.horizontalpanes.horizontal_stained_orange_pane": "Pannello di vetro orizzontale arancione",
+  "block.horizontalpanes.horizontal_stained_pink_pane": "Pannello di vetro orizzontale rosa",
+  "block.horizontalpanes.horizontal_stained_yellow_pane": "Pannello di vetro orizzontale giallo",
+  "block.horizontalpanes.horizontal_stained_lime_pane": "Pannello di vetro orizzontale lime",
+  "block.horizontalpanes.horizontal_stained_green_pane": "Pannello di vetro orizzontale verde",
+  "block.horizontalpanes.horizontal_stained_light_blue_pane": "Pannello di vetro orizzontale azzurro",
+  "block.horizontalpanes.horizontal_stained_cyan_pane": "Pannello di vetro orizzontale ciano",
+  "block.horizontalpanes.horizontal_stained_blue_pane": "Pannello di vetro orizzontale blu",
+  "block.horizontalpanes.horizontal_stained_magenta_pane": "Pannello di vetro orizzontale magenta",
+  "block.horizontalpanes.horizontal_stained_purple_pane": "Pannello di vetro orizzontale viola",
+  "block.horizontalpanes.horizontal_stained_brown_pane": "Pannello di vetro orizzontale marrone",
+  "block.horizontalpanes.horizontal_stained_gray_pane": "Pannello di vetro orizzontale grigio",
+  "block.horizontalpanes.horizontal_stained_light_gray_pane": "Pannello di vetro orizzontale grigio chiaro",
+  "block.horizontalpanes.horizontal_stained_black_pane": "Pannello di vetro orizzontale nero",
+  "block.horizontalpanes.horizontal_tinted_glass_pane": "Pannello di vetro orizzontale oscurato",
+
+  "itemGroup.horizontalpanes.horizontalpanes": "Horizontal Panes"
+}

@@ -1,0 +1,8 @@
+{
+  "parent": "horizontalpanes:block/parent/pane_bot",
+  "rendertype": "cutout",
+  "textures": {
+    "glass": "horizontalpanes:block/glass",
+    "edges": "horizontalpanes:block/glass_edge"
+  }
+}

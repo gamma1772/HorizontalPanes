@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "horizontal_panes",
+  "key": {
+    "P": {
+      "item": "minecraft:lime_stained_glass_pane"
+    }
+  },
+  "pattern": [
+    "PPP"
+  ],
+  "result": {
+    "count": 3,
+    "id": "horizontalpanes:horizontal_stained_lime_pane"
+  }
+}

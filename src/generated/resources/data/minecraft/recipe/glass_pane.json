@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "group": "glass_panes",
+  "ingredients": [
+    {
+      "item": "horizontalpanes:horizontal_glass_pane"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "minecraft:glass_pane"
+  }
+}

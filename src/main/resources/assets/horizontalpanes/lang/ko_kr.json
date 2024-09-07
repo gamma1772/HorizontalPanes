@@ -18,5 +18,8 @@
   "block.horizontalpanes.horizontal_stained_brown_pane": "갈색 염색된 수평 유리판",
   "block.horizontalpanes.horizontal_stained_gray_pane": "회색 염색된 수평 유리판",
   "block.horizontalpanes.horizontal_stained_light_gray_pane": "회백색 염색된 수평 유리판",
-  "block.horizontalpanes.horizontal_stained_black_pane": "검은색 염색된 수평 유리판"
+  "block.horizontalpanes.horizontal_stained_black_pane": "검은색 염색된 수평 유리판",
+  "block.horizontalpanes.horizontal_tinted_glass_pane": "차광 수평 유리판",
+
+  "itemGroup.horizontalpanes.horizontalpanes": "Horizontal Panes"
 }
